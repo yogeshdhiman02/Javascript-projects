@@ -19,7 +19,7 @@
     --main-text-bg-color: #17181d;
     
     --primary-button-color: #4681f4;
-    --primary-button-hover-color: #276cf7;
+    --primary-button-hover-color: #1865ff;
     --secondary-button-color: #dbdbdb;
     --secondary-hover-button-color: #b80e0e;
 
@@ -27,7 +27,7 @@
     --footer-text-color: #dfdfdf;
     --footer-hover-text-color: #f3f3f3;
 
-    --box-shadow-color: #575757;
+    --box-shadow-color: #cccccc;
     --box-shadow: 0 0 2px var(--box-shadow-color);
 
     --border-radius: 6px;
@@ -76,9 +76,13 @@ body{
     color: var(--primary-text-color);
     font-weight: 500 ;
     position: relative;
+    transition: color 0.2s ease-out;
 }
 .link:hover{
     color:var(--primary-button-color)
+}
+.link:focus{
+    color: var(--primary-button-color);
 }
 
 .content-container{
@@ -89,6 +93,7 @@ body{
     flex-direction: column;
     justify-content: center;
     z-index: -2;
+    background-color: #ffffff;
 }
 .content-container .color-code-display{
     width: 50%;
@@ -102,20 +107,21 @@ body{
     
 }
 .color-code-display:hover{
-    box-shadow: 0 0 10px var(--box-shadow-color);
+    box-shadow: 0 0 20px var(--box-shadow-color);
 }
-.color-code-display .color-text{
+.color-code-display .normal-text{
+    
+    width: 60%;
+    height: fit-content;
     font-size: 1.8rem;    
     font-weight: 500;
     color: var(--background-color);
 }
 .color-code-display .color-code-text{
-    width: 35%;
+    width: 28%;
     text-align: center;
-    font-size: 1.6rem;
-    letter-spacing: 0.125rem;
+    font-size: 1.3rem;
     color: var(--background-color);
-
 }
 
 .buttons-area{
