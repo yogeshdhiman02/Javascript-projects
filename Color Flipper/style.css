@@ -12,8 +12,7 @@
 
     --primary-text-color: #17181d;
     --secondary-text-color: #292c35;
-    --text-hover-color: #55c2da;
-    /* --text-hover-color: #04cdff; */
+    --main-logo-color: #4681f4;
     --background-color: #fff;
 
     --main-text-bg-color: #17181d;
@@ -64,7 +63,7 @@ body{
 }
 .nav-company-logo .company-logo{
     cursor: pointer;
-    color: var(--primary-button-color);
+    color: var(--main-logo-color);
 }
 
 .nav-links .ul-links{
@@ -96,7 +95,7 @@ body{
     background-color: #ffffff;
 }
 .content-container .color-code-display{
-    width: 50%;
+    width: 60%;
     height: 60px;
     justify-content: space-between;
     gap: 16px;
@@ -104,11 +103,13 @@ body{
     border-radius: 8px;
     padding: 3px 16px;
     transition: box-shadow 0.25s ease-in-out;
+    position: relative;
     
 }
 .color-code-display:hover{
     box-shadow: 0 0 20px var(--box-shadow-color);
 }
+
 .color-code-display .normal-text{
     
     width: 60%;
@@ -118,7 +119,7 @@ body{
     color: var(--background-color);
 }
 .color-code-display .color-code-text{
-    width: 28%;
+    width: 58%;
     text-align: center;
     font-size: 1.3rem;
     color: var(--background-color);

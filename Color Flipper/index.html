@@ -9,8 +9,11 @@
     <title>Colour Flipper</title>
 
     <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script/homeScript.js"></script>
+    <script type="module" src="./script/script.js"></script>
+
 </head>
-<body >
+<body>
    <div class="container">
     <nav>
         <div class="nav-bar flex">
@@ -19,8 +22,8 @@
             </div>
             <div class="nav-links">
                 <ul class="ul-links flex">
-                    <li><a href="#" class="link">Simple</a></li>
-                    <li><a href="#" class="link">HexCode</a></li>
+                    <li><a href="#" class="link" id="Simple">Name&Code</a></li>
+                    <li><a href="#" class="link" id="HexCode">HexCode</a></li>
                 </ul>
             </div>
         </div>
@@ -28,19 +31,21 @@
 
  
     <main class="content-container flex">
+
         <div class="color-code-display flex">
 
-            <div class="color-text">
-                <span class="normal-text" >Background Colour :</span>
+            <div class="normal-text">
+                <span>Background Colour :</span>
             </div>
+
             <div class="color-code-text">
-                <span class="hexcode-text"></span>
+                <span class="hexcode-text">------</span>
             </div>
         </div>
 
         <div class="buttons-area flex">
-            <button class="buttons">Reset</button>
-            <button class="buttons">Click</button>
+            <button class="buttons" id="Reset">Reset</button>
+            <button class="buttons" id="Click">Click</button>
         </div>
     </main>
    
@@ -55,5 +60,4 @@
     </footer>
    </div>
 </body>
-<script src="./script.js"></script>
 </html>
