@@ -1,5 +1,5 @@
 # Javascript-projects
 
-## Project 1 -> Color Flipper 
+### Project 1 -> Color Flipper 
 
-## Project 2 -> Counter 
+### Project 2 -> Counter 
