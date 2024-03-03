@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: #f3f3f3;
+
+    --main-text-color: #4681f4;
+    --main-second-text-color: #1865ff;
+    --number-text-color: #17181d;
+    --reset-btn-bg-color: #c7c7c7;
+
+    --decrease-btn-color: #e03131;
+    --increase-btn-color: #208843;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--background-color);
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+    border: 4px solid;
+    border-image: linear-gradient(to bottom,var(--main-text-color), #00000000) 1 100%;
+
+}
+.innerBox{
+    flex-direction: column;
+    width: 70%;
+    transform: translateY(-50px);
+    padding: 12px;
+}
+.textBox{
+    width: 60%;
+    height: 80px;
+    padding: 4px 12px;
+    justify-content: center;
+}
+.textBox .text{
+    font-size: 3rem;
+    font-weight: 600;
+    background: linear-gradient(to right, var(--main-text-color),var(--main-second-text-color));
+    background-clip: text;
+    color: transparent;
+}
+.numberBox{
+    border-radius: 12px;
+    padding: 4px 12px;
+    justify-content: center;
+    margin-block: 10px;
+
+}
+.numberBox .number{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--number-text-color);
+}
+.buttonsBox{
+    margin-top: 10px;
+    padding: 4px 12px;
+    gap: 10px;
+}
+.buttonsBox .buttons{
+    padding: 4px 16px;
+    border: 2px solid var(--number-text-color);
+    border-radius: 8px;
+    color: var(--number-text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    
+}
+.buttons:first-child:hover{
+    color: var(--decrease-btn-color);
+    border-color: var(--decrease-btn-color);
+}
+
+.buttons:nth-child(2):hover{
+    color: rgb(0,0,0);
+    border-color: rgb(0,0,0);
+}
+.buttons:last-child:hover{
+    color: var(--increase-btn-color);
+    border-color: var(--increase-btn-color);
+}
